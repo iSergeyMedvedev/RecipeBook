@@ -8,6 +8,7 @@ struct EntryApp: App {
     var body: some Scene {
         WindowGroup {
             HomeUI()
+            
         }
     }
 }
