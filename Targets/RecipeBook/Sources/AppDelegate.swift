@@ -1,4 +1,4 @@
-import UIKit
+import SwiftUI
 import RecipeBookKit
 import RecipeBookUI
 
@@ -12,8 +12,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         RecipeBookKit.hello()
         RecipeBookUI.hello()
+        
+        ThemeManager.shared.themes = [
+            .light: ThemeStorage.light,
+            .dark: ThemeStorage.dark
+        ]
 
         return true
     }
-
 }

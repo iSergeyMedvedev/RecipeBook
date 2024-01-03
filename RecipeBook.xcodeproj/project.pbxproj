@@ -12,6 +12,14 @@
 		29EB6916E72D7FA63857300C /* RecipeBookKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DD371A8DE241A4E5458023 /* RecipeBookKit.framework */; };
 		32AA88B92B44191E005FD91B /* EntryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA88B82B44191E005FD91B /* EntryApp.swift */; };
 		32AA88BE2B443CE0005FD91B /* HomeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA88BD2B443CE0005FD91B /* HomeUI.swift */; };
+		32DDC44D2B457FCC004B28E5 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC44C2B457FCC004B28E5 /* ThemeManager.swift */; };
+		32DDC44F2B458028004B28E5 /* ThemeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC44E2B458028004B28E5 /* ThemeTypes.swift */; };
+		32DDC4512B458079004B28E5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4502B458079004B28E5 /* Theme.swift */; };
+		32DDC4532B4582A7004B28E5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4522B4582A7004B28E5 /* Colors.swift */; };
+		32DDC4552B4582F4004B28E5 /* ThemeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4542B4582F4004B28E5 /* ThemeStorage.swift */; };
+		32DDC4582B458BE6004B28E5 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4572B458BE6004B28E5 /* LightTheme.swift */; };
+		32DDC45A2B458C41004B28E5 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC4592B458C41004B28E5 /* DarkTheme.swift */; };
+		32DDC45C2B4594A4004B28E5 /* Colors+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC45B2B4594A4004B28E5 /* Colors+Ext.swift */; };
 		3C340FC59F56A060B25434A3 /* RecipeBookKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9DD371A8DE241A4E5458023 /* RecipeBookKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3EB0208DFF5059191606DBF5 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0FB5D0856A2A1B3513C5C /* AppTests.swift */; };
 		4BDAFF80D36BAA04F13C3E59 /* RecipeBookUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60305C717B522DA061506329 /* RecipeBookUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -134,6 +142,14 @@
 		2C45E8414C23F82114678D65 /* RecipeBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RecipeBookTests-Info.plist"; sourceTree = "<group>"; };
 		32AA88B82B44191E005FD91B /* EntryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryApp.swift; sourceTree = "<group>"; };
 		32AA88BD2B443CE0005FD91B /* HomeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUI.swift; sourceTree = "<group>"; };
+		32DDC44C2B457FCC004B28E5 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		32DDC44E2B458028004B28E5 /* ThemeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTypes.swift; sourceTree = "<group>"; };
+		32DDC4502B458079004B28E5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		32DDC4522B4582A7004B28E5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		32DDC4542B4582F4004B28E5 /* ThemeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStorage.swift; sourceTree = "<group>"; };
+		32DDC4572B458BE6004B28E5 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		32DDC4592B458C41004B28E5 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		32DDC45B2B4594A4004B28E5 /* Colors+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Ext.swift"; sourceTree = "<group>"; };
 		39A0FB5D0856A2A1B3513C5C /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
 		54ECFEFA2AC021D5E0A572CF /* RecipeBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBookUITests.swift; sourceTree = "<group>"; };
 		60305C717B522DA061506329 /* RecipeBookUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RecipeBookUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +243,29 @@
 			path = HomeFlow;
 			sourceTree = "<group>";
 		};
+		32DDC44B2B457FBA004B28E5 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				32DDC4562B458BD4004B28E5 /* Themes */,
+				32DDC44C2B457FCC004B28E5 /* ThemeManager.swift */,
+				32DDC44E2B458028004B28E5 /* ThemeTypes.swift */,
+				32DDC4502B458079004B28E5 /* Theme.swift */,
+				32DDC4522B4582A7004B28E5 /* Colors.swift */,
+				32DDC4542B4582F4004B28E5 /* ThemeStorage.swift */,
+				32DDC45B2B4594A4004B28E5 /* Colors+Ext.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		32DDC4562B458BD4004B28E5 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				32DDC4572B458BE6004B28E5 /* LightTheme.swift */,
+				32DDC4592B458C41004B28E5 /* DarkTheme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		3476248D56E7CADD8DD6A1A8 /* Derived */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +346,7 @@
 		B67DD946A2A63AC9C9E92169 /* RecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				32DDC44B2B457FBA004B28E5 /* Theme */,
 				08AA0699B53503F8B1BA4189 /* Resources */,
 				B38C7B263AD83C016D00E4E9 /* Sources */,
 				7FCDF41C24DF76824E55B7BC /* Tests */,
@@ -603,10 +643,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DDC4552B4582F4004B28E5 /* ThemeStorage.swift in Sources */,
 				5F706E974E4483405BFC09BE /* TuistBundle+RecipeBook.swift in Sources */,
+				32DDC4532B4582A7004B28E5 /* Colors.swift in Sources */,
+				32DDC44F2B458028004B28E5 /* ThemeTypes.swift in Sources */,
+				32DDC4582B458BE6004B28E5 /* LightTheme.swift in Sources */,
+				32DDC45C2B4594A4004B28E5 /* Colors+Ext.swift in Sources */,
 				32AA88B92B44191E005FD91B /* EntryApp.swift in Sources */,
+				32DDC44D2B457FCC004B28E5 /* ThemeManager.swift in Sources */,
 				32AA88BE2B443CE0005FD91B /* HomeUI.swift in Sources */,
 				EB676A269C7EC57D477C7ED7 /* AppDelegate.swift in Sources */,
+				32DDC45A2B458C41004B28E5 /* DarkTheme.swift in Sources */,
+				32DDC4512B458079004B28E5 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
